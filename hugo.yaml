@@ -1,0 +1,47 @@
+baseURL: "https://wiki.rebuild.chat/"
+languageCode: en-us
+title: "Rebuild Wiki"
+enableGitInfo: true
+menu:
+  main:
+    - name: "Home"
+      url: /
+      weight: 1
+
+params:
+  description: "The semi-editable wiki of rebuild.chat"
+  noSearch: false
+
+markup:
+  highlight:
+    codeFences: true
+    style: bw
+    lineNumbersInTable: false
+    noClasses: false
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - html
+    - rss
+    - json
+  page:
+    - html
+
+module:
+  imports:
+    - path: github.com/barklan/hugo-dead-simple
