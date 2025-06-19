@@ -55,8 +55,15 @@ ElementX can not yet access spaces. Use a different client, or [SchildiChat Next
 3. Tap your state's space menu in the sidebar, and click "Explore Rooms"
 4. Join the channel for your metropolitan area
 {{% /tab %}}
+
 {{% /tabs %}}
 
 ## I've successfully joined, how come I can't see anything?
 
 This is a side effect of E2EE (end-to-end encryption). For security and privacy purposes, the server doesn't store the messages directly. Instead, clients send their messages in an encrypted form, and the decryption keys go directly from their client to yours. This system is very secure, but it breaks the ability to go back and read old messages. Next time someone sends a message, you should be able to see it!
+
+## Who can I contact for help?
+
+* **On Matrix:** [@ora](https://matrix.to/#/@ora:rebuild.chat)
+* **On Signal:** [@ora.98](https://signal.me/#eu/jdtNIGGBzvbqzinORsCtDWL-ud3LxldraH9cvER0YfSkXY-pa79PdZlF4vcpUGcU)
+* **On Discord:** @oralitical
